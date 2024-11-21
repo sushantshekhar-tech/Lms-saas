@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.4.1",
     "@radix-ui/react-slot": "^1.1.0",
     "@types/node": "22.9.1",
     "@types/react": "18.3.12",
@@ -18,6 +19,7 @@
     "clsx": "^2.1.1",
     "eslint": "9.15.0",
     "eslint-config-next": "15.0.3",
+    "lms-saas": "file:",
     "lucide-react": "^0.460.0",
     "next": "15.0.3",
     "postcss": "8.4.49",
