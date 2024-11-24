@@ -1,12 +1,14 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { Compass, Layout } from "lucide-react"; // Import icons
+import { Compass, Layout,List,BarChart } from "lucide-react"; // Import icons
 import { usePathname, useRouter } from "next/navigation";
 
 const iconMap = {
   Compass,
   Layout,
+  List,
+  BarChart 
 };
 
 type IconName = keyof typeof iconMap; // Define a type for valid keys of iconMap
