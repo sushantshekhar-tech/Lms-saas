@@ -4,6 +4,8 @@ import { redirect } from "next/navigation";
 import { auth } from "@clerk/nextjs/server";
 import { IconBadge } from "@/components/icon-badge";
 import { LayoutDashboard } from "lucide-react";
+import TitleForm from "./_components/title-form";
+import DescriptionForm from "./_components/description-form";
 
 const CourseIdPage = async ({ params }: { params: { courseId: string } }) => {
 
@@ -53,7 +55,16 @@ const CourseIdPage = async ({ params }: { params: { courseId: string } }) => {
             <IconBadge icon={LayoutDashboard} />
             <h2 className="text-xl">Customize your Course</h2>
           </div>
-{/* TODO : Add all the forms fields and update the things manually */}
+          <TitleForm
+          initialData={course}
+          courseId={course.id}
+          />
+          <DescriptionForm
+          initialData={{
+            description: course.description || "",
+          }}
+          courseId={course.id}
+          />
         </div>
       </div>
     </div>
