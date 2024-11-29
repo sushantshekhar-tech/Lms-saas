@@ -52,6 +52,7 @@ const ImageForm = ({ initialData, courseId }: ImageFormProps) => {
           {!isEditing && !initialData.imageUrl && (
             <>
             <PlusCircle className="h-4 w-4 mr-2"/>
+            Add new Image
             </>
           )}
           {!isEditing && initialData.imageUrl && (
