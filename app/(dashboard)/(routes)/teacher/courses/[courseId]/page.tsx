@@ -89,7 +89,7 @@ const CourseIdPage = async ({ params }: { params: { courseId: string } }) => {
               <IconBadge icon={ListCheck} />
               <h2 className="text-xl">Course Chapters</h2>
             </div>
-            <div>TODO CHAPTERS</div>
+            <DescriptionForm initialData={course} courseId={course.id} />
           </div>
           <div>
             <div className="flex items-center gap-x-2">
