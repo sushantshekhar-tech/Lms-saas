@@ -87,7 +87,10 @@ setIsMounted(true)
                     > 
                     <Grip className='h-5 w-5'/>
                     </div>
+                    <div className='flex items-center justify-center'>
+
                     {chapter.title}
+                    </div>
                     <div className='ml-auto pr-2 flex items-center gap-x-2'>
                     {chapter.isFree && (
                         <Badge>
